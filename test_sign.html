@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉽 회원가입 | SHIP</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Gothic+A1:wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= 노토+산스+KR:wght@500 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans+KR & display=swap');
+
+       body{
+        background-color: aliceblue;
+       }
+        header{
+           width:100%;
+           height:160px;
+           border:0px solid #cccccc;
+           margin-top:10px;
+       }
+       #logo{
+           margin-left: 40%;
+           border-bottom: 0px dotted gray;
+       }
+       #top{
+           float: left;
+           margin-left:85% ;
+           
+       }
+       #Ship{
+           font-family: 'Permanent Marker', cursive;
+           color: #123ad9;
+       }
+       #fon{
+           font-weight: bolder;
+       }
+       
+        aside{
+            display: block;
+            margin-left: 20%;
+            width: 1100px;
+            height: 750px;
+            border: 2PX solid #e8edf4;
+            font-size: 18px;
+            border-radius: 15px;
+            background-color: white;
+            
+        }
+        #formM{
+            text-align:left;
+            padding: 5px;
+            line-height: 30px;
+            margin-left: 10%;
+            margin-top: 5%;
+            float: left;
+        }
+        
+        #Fimg{
+            float: right;
+            margin-right:180px;
+            margin-top: 120px;
+            
+        }
+
+        footer{
+           border: 0px solid #cccccc;
+           width:100%;
+           height:100px;
+           margin-top:200px;
+           background-color: rgb(100, 238, 192);
+       }
+       
+       #address{
+           float: left;
+           margin-top: 30px;
+           padding-left: 10px;
+        }
+       #customer{
+           float: right;
+           margin-top:30px;
+           padding-right: 10px;
+       }
+       #agree{
+            float: right;
+            margin-right:170px;
+            margin-top: 50px;
+            color: rgb(98, 106, 116);
+            font-size: medium;
+       }
+       #fontP{
+        color: rgb(13, 98, 255);
+        font-size: x-small;
+       }
+       #fontO{
+        color: rgb(255, 114, 114);
+        font-size: x-small;
+       }
+       #right{
+        float: right;
+       }
+       #blue{
+        background-color: #9fcdfff6;
+        border: 2PX solid #305df2;
+        border-radius: 15px;
+       }
+       #blue:hover{
+        background-color: whitesmoke;
+        color: #1229d9;
+       }
+       #turtle2{
+        float: left;
+        margin-left: 3%;
+        padding-bottom: 0;
+        margin-top: 150px;
+
+    }
+    </style>
+</head>
+<body>
+    <header>
+
+        <div id="logo">
+           <h1 id="Ship"><a href="index.html"> <img src="https://pbs.twimg.com/media/FVJZoFmaQAAPGdD?format=jpg&name=small" width="100"></a> SHIP</h1>  
+        </div>
+        <div id="top">
+            로그인 | <a href="index_sign.html" style="text-decoration:none">회원가입</a> | 사이트 맵
+        </div>
+    
+    </header>
+
+
+    <aside>
+    <form id="formM">
+        <div id="fon">ship 회원가입</div><br>
+        이름 <br> <input type="text" autofocus><p></p>
+        전화번호 <br> <input type="text" placeholder="숫자만 입력하세요">
+        <input type="submit" value="인증 번호 받기"><p></p>
+        휴대폰 인증 <br> <input type="text" placeholder="인증번호 6자리를 입력하세요"> <p></p>
+        이메일<br><input type="text">
+        <select>
+            <option value="naver">@naver.com</option>
+            <option value="goegle">@gmail.com</option>
+            <option value="daum">@daum.net</option>
+            <option value="nate">@nate.com</option>
+        </select> <p></p>
+        아이디<br> <input type="text" > <input type="submit" value="중복 확인"><p></p>
+        비밀번호<br> <input type="text" ><p></p>
+        비밀번호 재확인<br> <input type="text" ><p></p>
+        <input id="blue" type="submit" value="가입하기"><p></p>
+        
+    </form>
+        
+  
+    <section id="Fimg"><img src="https://cdn-icons-png.flaticon.com/512/2345/2345500.png" width="300"></section>
+    <div id="agree">
+        <fieldset style="border-radius: 15px; border: 2PX solid #e8edf4;">
+        <label><input type="checkbox" name="agree" value="use" > 이용 약관 동의<span id="fontP">(필수)</span>  <span id="right">▷</span></label><p></p>
+        <label><input type="checkbox" name="agree2" value="private"> 개인 정보 수집 동의<span id="fontP">(필수)</span><span id="right"> ▷</span></label><p></p>
+        <label><input type="checkbox" name="agree2" value="push"> 이벤트/캠페인 알림수신 동의<span id="fontO">(선택)</span> ▷</label><p></p>
+    </div>
+    </aside>
+
+
+    <div class="clear"></div>
+    <div id="turtle2">
+        <img src="https://cdn-icons-png.flaticon.com/512/2666/2666780.png" width="100"></div>
+
+    <footer>
+        
+        <div id="address">
+            홈페이지 관리자 : 함경민  |  관리자 번호 123-456-0608
+        </div>
+        <div id="customer">
+            고객센터 0510-0608
+        </div>
+        
+  
+    </footer>
+    
+</body>
+</html>

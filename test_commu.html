@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉽 홈페이지 | SHIP</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Gothic+A1:wght@300 & display=swap');
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+
+     header{
+           width:100%;
+           height:250px;
+           border:0px solid #cccccc;
+           margin-top:0px;
+           background-color: aliceblue;
+       }
+       #logo{
+           float:left;
+           margin:10px;
+           border-bottom: 0px dotted gray;
+           
+       }
+       #Ship{
+           font-family: 'Permanent Marker', cursive;
+           color: #123ad9;
+       }
+       #top{
+           float: right;
+           margin:10px;
+       }
+       #share1{
+        float: left;
+        margin-top: 60px;
+        margin-left: 79%;
+       }
+       #share2{
+        float: left;
+        margin-top: 5px;
+        margin-left: 79%;
+       }
+       #share3{
+        float: left;
+        margin-top: 5px;
+        margin-left: 79%;
+       }
+       nav {
+          width: 100%;
+          height:80px;
+          margin-top: 0px;
+          margin-bottom:50px;
+          border-top: 1px solid #dde5ec;
+          border-bottom: 2px solid #dde5ec;
+          padding-top: 0px;
+          padding-bottom: 20px;
+          background-color: white;
+       }
+       #AA{
+        font-family: 'Gothic A1', 산세리프체;
+       }
+       #BB{
+        font-family:'Noto Sans KR', sans-serif;
+       }
+    
+    ul li{
+       margin: 0;
+       padding: 0px;
+       list-style: none;
+    }
+       
+      .sticky{
+        position: sticky;
+        top: 0px;
+      }
+       section{
+           float: left;
+           border:0px solid #cccccc;
+           margin-top:80px;
+           margin-left: 5%;
+       }
+       aside{
+           float: left;
+           border:0px solid #cccccc;
+           margin-top:80px;
+           margin-left: 30px;
+           font-size: medium;
+       }
+       aside li{
+        margin-top: 55px;
+        margin-bottom:50px;
+        margin-left:10px;
+        list-style-type: none;
+        border-bottom: 0px dotted gray;
+       }
+
+       footer{
+           border: 0px solid #cccccc;
+           width:100%;
+           height:100px;
+           margin-top:0px;
+           background-color: rgb(100, 238, 192);
+       }
+       .clear{
+           clear: both;
+       }
+       #address{
+           float: left;
+           margin-top: 30px;
+           padding-left: 10px;
+        }
+       #customer{
+           float: right;
+           margin-top:30px;
+           padding-right: 10px;
+       }
+       #page{
+           width: 1500px;
+           margin: auto;
+           border: 0px solid #cccccc;
+       }
+       h1{
+           font-family: 'Jua', sans-serif;
+       }
+       .accent{
+           font-weight: bold;
+       }  
+       .accent2{
+           font-variant: small-caps;
+       } 
+
+    #main-menu{
+        margin-left: 50px;
+    }
+    #main-menu > li {
+       float: left;
+       position: relative;
+       width: 230px;
+    }
+    #main-menu > li > a {
+       
+       
+       text-align: center;
+       text-decoration: none;
+       letter-spacing: 0.05em;
+       display: block;
+       padding: 14px 36px;
+       text-shadow: 1px 1px 1px rgba(8, 62, 255, 0.2);
+    }
+    
+    #sub-menu {
+       position: absolute;
+       width: max-content;
+       background: #baeeff;
+       visibility: hidden;
+       font-size: smaller;
+       border-radius: 5px;
+    }
+    #sub-menu > li {
+       padding: 16px 28px;
+    }
+    #sub-menu > li >  a {
+       color: rgb(0, 0, 0);
+       text-decoration: none;
+    }
+    #main-menu > li:hover #sub-menu {
+       
+       visibility: visible;
+    }
+    #sub-menu > li >  a:hover {
+        color: rgb(0, 95, 238);
+    }
+    
+    a:link{
+        color: black;
+       }
+    a:hover{
+          color: rgb(0, 95, 238);
+      }
+      
+  
+   
+
+
+
+    #content{
+        font-size: medium;
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 2em;
+        margin-left: 50px;
+    }
+    #search{
+        float: left;
+        margin-left: 40%;
+        border-radius: 15px;
+    }
+    #button{
+        background-color: aliceblue;
+        border-color: #d7dfff;
+        border-radius: 3px;
+    }
+    .selt{
+        float: right;
+        margin-right: 5%;
+    }
+    #updown{
+        padding-top: 0px;
+        padding-bottom: 30px;
+        background-color: white;
+        border-top: 3px solid rgb(0, 56, 198);
+        border-bottom: 3px solid rgb(0, 56, 198);
+        width: 350;
+        height: 500;
+        float: left;
+
+    }
+    #updown2{
+        padding-top: 0px;
+        padding-bottom: 30px;
+        background-color: white;
+        border-top: 3px solid rgb(0, 56, 198);
+        border-bottom: 3px solid rgb(0, 56, 198);
+        width: 350;
+        height: 500;
+        float: left;
+        margin-left: 40px;
+    }
+    #updown3{
+        padding-top: 0px;
+        padding-bottom: 30px;
+        background-color: white;
+        border-top: 3px solid rgb(0, 56, 198);
+        border-bottom: 3px solid rgb(0, 56, 198);
+        width: 350;
+        height: 500;
+        float: left;
+        margin-top: 100px;
+    }
+    #updown4{
+        padding-top: 0px;
+        padding-bottom: 30px;
+        background-color: white;
+        border-top: 3px solid rgb(0, 56, 198);
+        border-bottom: 3px solid rgb(0, 56, 198);
+        width: 350;
+        height: 500;
+        float: left;
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+
+   #Title{
+    font-size: larger;
+    font-weight: bold;
+   }
+   #Con{
+    font-size: smaller;
+   }
+   #date{
+    font-size: x-small;
+    float: right;
+   }
+   #txt{
+      font-family: 'SBAggroB';
+      float: left;
+      margin-left: 48%;
+      color: rgb(0, 56, 198);
+      font-weight: lighter;
+   }
+   #Blu{
+    font-weight: bold;
+    font-size: x-small;
+    color: #123ad9;
+   }
+   a:link{
+        color: black;
+       }
+       a:hover{
+          color: rgb(0, 95, 238);
+      }
+    #FO{
+        width: 100%;
+        height: 150px;
+        margin-top: 50px;
+        padding-top: 70px;
+    }
+    #order{
+        float: left;
+        margin-left: 39%;
+    }
+
+    </style>
+</head>
+<body id="page">
+
+    <header>
+
+    <div id="logo">
+       <h1 id="Ship"> <img src="https://pbs.twimg.com/media/FVJZoFmaQAAPGdD?format=jpg&name=small" width="160"> SHIP</h1>  
+    </div>
+    <div id="top">
+        로그아웃 | <a href="test_sign.html" style="text-decoration:none">회원가입</a> | 사이트 맵
+    </div>
+    <div id="share1"> <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/64d0623a017800001.png" width="30"> </div>
+    <div id="share2"> <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/twitter_icon_130806.png" width="30"> </div>
+    <div id="share2"> <img src="https://lh3.googleusercontent.com/Ef2FLe-TVVU6_VYK6yynAjttWYr8rinJB8iMVzAmSRsJX6LfozZ65Mvt7PXB7kSVKM_B44dkf9H_9qpcFbWNEGwrrrnspxCTLvyEP54qhHhQ6n94Wa_9BZxSc384jrquXA=w1280" width="30"> </div>
+
+    </header>
+
+  
+    <nav class="sticky" id="content" >
+        <nav role="navigation">
+            <ul id="main-menu">
+              <li ><a href="#">SHIP 소개</a>
+              <ul id="sub-menu">
+                <li><a href="#" aria-label="subemnu">결성 계기</a></li>
+                <li><a href="#" aria-label="subemnu">캠페인 활동</a></li>
+              </ul>
+              </li>
+    
+              <li><a href="#">바다의 고통</a>
+                <ul id="sub-menu">
+                  <li><a href="#" aria-label="subemnu">바다의 피해</a></li>
+                  <li><a href="#" aria-label="subemnu">버려진 쓰레기</a></li>
+                </ul>
+              </li>
+    
+              <li><a href="#">바다 지키기</a>
+                <ul id="sub-menu">
+                  <li><a href="#" aria-label="subemnu">봉사 활동</a></li>
+                  <li><a href="#" aria-label="subemnu">일상 속 작은 실천</a></li>
+                  <li><a href="#" aria-label="subemnu">제대로 재활용</a></li>
+                  <li><a href="#" aria-label="subemnu">후원</a></li>
+                </ul>
+              </li>
+    
+              <li><a href="test_commu.html">커뮤니티</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </nav>
+    </nav>
+    <div class="clear"></div>
+    
+    <div id="txt"> #쉽 커뮤니티</div>
+    <div class="clear"></div>
+
+
+    <section>
+        <div id="updown">
+            <span id="Blu">#도전</span><br>
+            <img src="https://pbs.twimg.com/media/EnFJHOKVkAEzMb6?format=png&name=360x360" width="270px" height="220px"><br><br>
+            <a href="#" style="text-decoration:none"><span id="Title">나랑 비치코밍 하러 갈 사람~</span><br> <span id="Con">내일 근처 볼 일 보고 잠깐 바다 갈까 하는데<br> 같이 할 사람? 몸만 오면 됨<br> </span></a>
+            <br><br><span id="date">2022-06-15</span>
+        </div>
+
+        <div id="updown2">
+            <span id="Blu">#리뷰</span><br>
+            <img src="https://pbs.twimg.com/media/FVLHceQakAE-2Ay?format=jpg&name=large" width="270px" height="220px"><br><br>
+            <a href="#" style="text-decoration:none"><span id="Title">씨스피라시 리뷰</span><br> <span id="Con">넷플릭스의 유명한 다큐 씨스피라시를 봤다<br>보면서 참 많은 생각이 들었다.<br>내가 낭비한 쓰레기들이..</span></a>
+            <br><br><span id="date">2022-06-15</span>
+            </div>
+
+        <div id="updown2">
+            <span id="Blu">#도전 #제로웨이스트</span><br>
+            <img src="https://pbs.twimg.com/media/FVLHceSacAAIWyb?format=jpg&name=large" width="270px" height="220px"><br><br>
+            <a href="#" style="text-decoration:none"><span id="Title">제로웨이스트 도전기 1일차</span><br> <span id="Con">오늘 여기다 마라탕 받아먹으려고 하는데<br> 안된다 하진 않겠지?..유투브에선 하는 거 많이<br> 봤는데 나같이 국물 요리 받아본 사람?..</span></a>
+            <br><br><span id="date">2022-06-15</span>
+        </div>   
+
+        <div class="clear"></div>
+        <div id="updown3">
+            <span id="Blu">#도전 #제로웨이스트 #텀블러</span><br>
+            <img src="https://pbs.twimg.com/media/FVK0TWQaQAAn3GZ?format=jpg&name=small" width="270px" height="220px"><br><br>
+            <a href="#" style="text-decoration:none"><span id="Title">드디어 텀블러 샀다!!</span><br> <span id="Con">잘 쓸까 오랫동안 고민하다 결국 샀어.<br> 앞으로 카페 갈 때 가져가야지<br>일단 한 달 동안 테이크아웃 잔 안쓰기가..</span></a>
+            <br><br><span id="date">2022-06-15</span>
+        </div>
+
+        <div id="updown4">
+                <span id="Blu">#실천 #메일지우기</span><br>
+                <img src="https://pbs.twimg.com/media/FVLYqKFVsAAc_yk?format=jpg&name=small" width="270px" height="220px"><br><br>
+                <a href="#" style="text-decoration:none"><span id="Title">사소한 것부터</span><br> <span id="Con">학교에서 환경수업을 듣고 지구 환경이 많이<br> 안 좋아졌다는 것을 알게되었어요<br>그래서 쉬운 것부터 실천해 보려고 합니다. ..</span></a>
+                <br><br><span id="date">2022-06-15</span>
+        </div>
+
+        <div id="updown4">
+            <span id="Blu">#제로웨이스트</span><br>
+            <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165182708332358617.jpg?gif=1&w=850&h=850&c=c" width="270px" height="220px"><br><br>
+            <a href="#" style="text-decoration:none"><span id="Title">천연 수세미 어때?</span><br> <span id="Con">제로웨이스트 관련 책 읽으면서 관심이 생겼는데<br> 리뷰가 좋더라구 모양 때문에 잡기<br>불편하거나 그러진 않아? ..</span></a>
+            <br><br><span id="date">2022-06-14</span>
+    </div>
+        
+    </section>
+    <aside>
+        
+            <a href="#" style="text-decoration:none">
+            <div id="content">
+                <span id="Title">뉴스</span><br>
+                [하이닥]남극에 내린 플라스틱 눈...‘미세 플…<br>
+                [BBC]플라스틱 사용을 중단하면 어떤 일이… <br>
+                [내 손안에 서울]일회용품 줄이는 '제로마켓'… <br>
+                [한겨례]배달 쓰레기, 배달앱은 왜 말이 없나…<br>
+                [에코타임스]환경교육 기자단 ‘에코 아리아’… <br>
+                 
+            </div>
+            </a>
+
+            </li>
+          
+        </ul>
+    </aside> 
+    <div class="clear"></div>
+    
+      <div id="FO">
+       <div id="search">
+        <select>
+            <option value="title">제목</option>
+            <option value="content">내용</option>
+            <option value="ID">아이디</option>
+        </select>
+        <input type="text" placeholder="검색 내용">
+        <input id="button" type="button" value="검색">  
+        </div>
+
+        <br>
+        <br>
+        <input class="selt" id="button" type="button" value="작성">
+        <br>
+        <div id="order">
+        < 1&nbsp&nbsp&nbsp 2&nbsp&nbsp&nbsp 3&nbsp&nbsp&nbsp 4&nbsp&nbsp&nbsp 5&nbsp&nbsp&nbsp 6&nbsp&nbsp&nbsp 7&nbsp&nbsp&nbsp 8&nbsp&nbsp&nbsp 9&nbsp&nbsp&nbsp 10 >
+        </div>
+    </div>
+
+    
+      
+
+
+    <footer>
+        
+        <div id="address">
+            홈페이지 관리자 : 함경민  |  관리자 번호 123-456-0608
+        </div>
+        <div id="customer">
+            고객센터 0510-0608
+        </div>
+        
+  
+    </footer>
+    
+
+</body>
+</html>

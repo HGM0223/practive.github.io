@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉽 홈페이지 | SHIP</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Gothic+A1:wght@300 & display=swap');
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+
+     header{
+           width:100%;
+           height:250px;
+           border:0px solid #cccccc;
+           margin-top:0px;
+           background-color: aliceblue;
+       }
+       #logo{
+           float:left;
+           margin:10px;
+           border-bottom: 0px dotted gray;
+           
+       }
+       #Ship{
+           font-family: 'Permanent Marker', cursive;
+           color: #123ad9;
+       }
+       #top{
+           float: right;
+           margin:10px;
+       }
+       #share1{
+        float: left;
+        margin-top: 60px;
+        margin-left: 79%;
+       }
+       #share2{
+        float: left;
+        margin-top: 5px;
+        margin-left: 79%;
+       }
+       #share3{
+        float: left;
+        margin-top: 5px;
+        margin-left: 79%;
+       }
+       nav {
+          width: 100%;
+          height:80px;
+          margin-top: 0px;
+          margin-bottom:50px;
+          border-top: 1px solid #dde5ec;
+          border-bottom: 2px solid #dde5ec;
+          padding-top: 0px;
+          padding-bottom: 20px;
+          background-color: white;
+       }
+       #AA{
+        font-family: 'Gothic A1', 산세리프체;
+       }
+       #BB{
+        font-family:'Noto Sans KR', sans-serif;
+       }
+    
+    ul li{
+       margin: 0;
+       padding: 0px;
+       list-style: none;
+    }
+       
+      .sticky{
+        position: sticky;
+        top: 0px;
+      }
+       section{
+           float: left;
+           border:0px solid #cccccc;
+           margin-top:10px;
+           margin-left: 5%;
+       }
+       aside{
+           float: left;
+           border:0px solid #cccccc;
+           margin-top:10px;
+           margin-left: 30px;
+           font-size: medium;
+       }
+       aside li{
+        margin-top: 55px;
+        margin-bottom:50px;
+        margin-left:10px;
+        list-style-type: none;
+        border-bottom: 0px dotted gray;
+       }
+
+       footer{
+           border: 0px solid #cccccc;
+           width:100%;
+           height:100px;
+           margin-top:0px;
+           background-color: rgb(100, 238, 192);
+       }
+       .clear{
+           clear: both;
+       }
+       #address{
+           float: left;
+           margin-top: 30px;
+           padding-left: 10px;
+        }
+       #customer{
+           float: right;
+           margin-top:30px;
+           padding-right: 10px;
+       }
+       #page{
+           width: 1500px;
+           margin: auto;
+           border: 0px solid #cccccc;
+       }
+       h1{
+           font-family: 'Jua', sans-serif;
+       }
+       .accent{
+           font-weight: bold;
+       }  
+       .accent2{
+           font-variant: small-caps;
+       } 
+
+    #main-menu{
+        margin-left: 50px;
+    }
+    #main-menu > li {
+       float: left;
+       position: relative;
+       width: 230px;
+    }
+    #main-menu > li > a {
+       
+       
+       text-align: center;
+       text-decoration: none;
+       letter-spacing: 0.05em;
+       display: block;
+       padding: 14px 36px;
+       text-shadow: 1px 1px 1px rgba(8, 62, 255, 0.2);
+    }
+    
+    #sub-menu {
+       position: absolute;
+       width: max-content;
+       background: #baeeff;
+       visibility: hidden;
+       font-size: smaller;
+       border-radius: 5px;
+    }
+    #sub-menu > li {
+       padding: 16px 28px;
+    }
+    #sub-menu > li >  a {
+       color: rgb(0, 0, 0);
+       text-decoration: none;
+    }
+    #main-menu > li:hover #sub-menu {
+       
+       visibility: visible;
+    }
+    #sub-menu > li >  a:hover {
+        color: rgb(0, 95, 238);
+    }
+    
+    a:link{
+        color: black;
+       }
+    a:hover{
+          color: rgb(0, 95, 238);
+      }
+      
+  
+   .wrapper {
+        margin-top: 150px;
+        padding-top: 70px;
+        width: 100%;
+        height: 160px;
+        font-family: 'SBAggroB';
+        font-size: 50pt;
+        text-align: center;
+        color:white ;
+        background-color: #0d2792;
+        text-shadow: 10px 3px 0px rgb(12, 80, 182);
+        margin-bottom: 200px;
+        
+    }
+
+    .wrapper:hover .typing-demo{
+        
+        width: 100%;
+        animation: typing 2s steps(32), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+       
+    }
+    @keyframes typing {
+      from {
+             width: 0
+        }
+    }
+    
+    @keyframes blink {
+      50% {
+             border-color: transparent
+        }
+    }
+
+
+    #content{
+        
+        font-family: 'Noto Sans KR', sans-serif;
+
+    }
+    #big{
+        font-size: x-large;
+    }
+    .ques{
+        margin-top: 200px;
+        padding-top: 10px;
+        width: 100%;
+        height: 160px;
+        font-family: 'SBAggroB';
+        font-size: 50pt;
+        text-align: center;
+        background-color: white;
+    }
+    #im{
+        float: left;
+        margin-left: 20%;
+    }
+    #sen{
+        float: right;
+        margin-right: 15%;
+        margin-top: 110px;
+        font-family:'Noto Sans KR', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+
+    }
+    #line1{
+        float: left;
+        margin-left: 45%;
+        margin-top: 0px;
+    }
+    #im2{
+        float: left;
+        margin-left: 20%;
+        margin-top: 110px;
+        font-family:'Noto Sans KR', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+    }
+    #sen2{
+        float: right;
+        margin-right: 20%;
+    }
+    #line2{
+        float: left;
+        margin-left: 30%;
+        margin-top: 0px;
+    }
+    #sen3{
+        float: right;
+        margin-right: 25%;
+        margin-top: 110px;
+        font-family:'Noto Sans KR', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+
+    }
+    #foot{
+        width: 100%;
+        height: 200px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        border-top: 3px solid rgb(100, 238, 192);
+    }
+    #ment{
+        text-align: center;
+        font-family: 'SBAggroB';
+        padding-bottom: 0;
+        float: left;
+        margin-left: 45%;
+        margin-top: 150px;
+    }
+    #turtle{
+        float: left;
+        margin-left: 3%;
+        padding-bottom: 0;
+        margin-top: 150px;
+
+    }
+    #just{
+        float: right;
+        margin-right: 3%;
+        padding-bottom: 0;
+        margin-top: 80px;
+        
+    }
+    
+
+    </style>
+</head>
+<body id="page">
+
+    <header>
+
+    <div id="logo">
+       <h1 id="Ship"> <img src="https://pbs.twimg.com/media/FVJZoFmaQAAPGdD?format=jpg&name=small" width="160"> SHIP</h1>  
+    </div>
+    <div id="top">
+        로그인 | <a href="test_sign.html" style="text-decoration:none">회원가입</a> | 사이트 맵
+    </div>
+    <div id="share1"> <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/64d0623a017800001.png" width="30"> </div>
+    <div id="share2"> <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/twitter_icon_130806.png" width="30"> </div>
+    <div id="share2"> <img src="https://lh3.googleusercontent.com/Ef2FLe-TVVU6_VYK6yynAjttWYr8rinJB8iMVzAmSRsJX6LfozZ65Mvt7PXB7kSVKM_B44dkf9H_9qpcFbWNEGwrrrnspxCTLvyEP54qhHhQ6n94Wa_9BZxSc384jrquXA=w1280" width="30"> </div>
+
+    </header>
+
+  
+    <nav class="sticky" id="content" >
+        <nav role="navigation">
+            <ul id="main-menu">
+              <li ><a href="#">SHIP 소개</a>
+              <ul id="sub-menu">
+                <li><a href="#" aria-label="subemnu">결성 계기</a></li>
+                <li><a href="#" aria-label="subemnu">캠페인 활동</a></li>
+              </ul>
+              </li>
+    
+              <li><a href="#">바다의 고통</a>
+                <ul id="sub-menu">
+                  <li><a href="#" aria-label="subemnu">바다의 피해</a></li>
+                  <li><a href="#" aria-label="subemnu">버려진 쓰레기</a></li>
+                </ul>
+              </li>
+    
+              <li><a href="#">바다 지키기</a>
+                <ul id="sub-menu">
+                  <li><a href="#" aria-label="subemnu">봉사 활동</a></li>
+                  <li><a href="#" aria-label="subemnu">일상 속 작은 실천</a></li>
+                  <li><a href="#" aria-label="subemnu">제대로 재활용</a></li>
+                  <li><a href="#" aria-label="subemnu">후원</a></li>
+                </ul>
+              </li>
+    
+              <li><a href="test_commu.html">커뮤니티</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </nav>
+    </nav>
+   
+
+    <section>
+        <img src="https://imgnn.seoul.co.kr/img//upload/2020/11/20/SSI_20201120111021_V.jpg" width="800px" height="520px">
+       
+    </section>
+    <aside>
+        <ul>
+            <li><span class="accent">SHIP</span> <br>
+                the <span class="accent">S</span>ea say
+                <span class="accent">H</span>elp me!!
+                <span class="accent">I</span> don't like
+                <span class="accent">P</span>lastic
+            </li>
+            <div id="content">
+            <li>
+                
+                <span id="big">❝</span>&nbsp;우리 삶에 없어서는 안될 바다.<br> 
+                &nbsp;&nbsp;&nbsp;이 바다는 우리가 만들어 낸 각종 생활 쓰레기와 <br>&nbsp;&nbsp;&nbsp;불법 폐기물로 고통받고 있다.<br><br>
+                
+                &nbsp;&nbsp;&nbsp;해마다 바다에선 플라스틱 쓰레기 때문에 <br>&nbsp;&nbsp;&nbsp;약 100만마리의 바닷새와 10만마리의 해양 포유류가 죽는다.<br>
+                &nbsp;&nbsp;&nbsp;우연히 쓰레기가 몸에 걸리거나 엉켜서 죽기도 하고, <br>&nbsp;&nbsp;&nbsp;음식으로 착각해 먹기도 한다.<br><br>
+
+                &nbsp;&nbsp;&nbsp;바다거북들에게도 적게는 4000개, 많게는 18만개 이상의 <br>&nbsp;&nbsp;&nbsp;한국산 플라스틱이 흘러들어간 것으로 추산됐다.&nbsp;&nbsp;&nbsp;&nbsp;<span id="big">❞</span><br>
+               
+            </li>    
+            </div>
+
+            </li>
+          
+        </ul>
+    </aside> 
+    <div class="clear"></div>
+    
+    <div class="ques">많고 많은 쓰레기는 어디로 가는 걸까?</div>
+    
+       <div> 
+        <ani id="im">
+        <img src="https://cdn.newspenguin.com/news/photo/202205/11488_34429_141.jpeg" width= 480" height="300"> </ani>
+        <tree id="sen">
+            우리가 버린 플라스틱 쓰레기는 바다에 거대한 이루고
+        </tree>
+         </div>
+
+         <div id="line1">
+            <img src="https://pbs.twimg.com/media/FVKhvySaAAAAMGC?format=jpg&name=medium" width="400" height="">
+         </div>
+    
+         <div> 
+            <ani2 id="im2">
+            수 많은 동물에게 심각한 피해를 입힌 뒤</ani2>
+            <tree2 id="sen2">
+                <img src="http://fpost.co.kr/board/data/editor/2012/30140009828616dc16e1903182301961_1609052194_9938.jpg" width= 480" height="300">  
+            </tree2>
+             </div>
+
+             <div id="line2">
+                <img src="https://pbs.twimg.com/media/FVKhvyUaMAALHCp?format=jpg&name=medium" width="400" height="">
+        </div>
+
+        <div> 
+            <ani id="im">
+            <img src="https://img.cjnews.cj.net/wp-content/uploads/2021/06/pha_bio_20210615_01.png" width= 480" height="300"> </ani>
+            <tree id="sen3">
+                다시 우리에게 돌아옵니다
+            </tree>
+             </div>
+
+    <div class="clear"></div>
+
+    <div class="wrapper">
+        <div class="typing-demo">
+            한국인 1인당 연간 플라스틱 배출량은 132.7㎏
+        </div>
+    </div>
+
+    <div id="foot">
+        <div id="turtle">
+        <img src="https://cdn-icons-png.flaticon.com/512/2666/2666780.png" width="100"></div>
+        <span id="ment">
+        더 이상 외면할 수 없는 환경 문제, 보고만 있을 수 없다<br>
+        우리는 하나뿐인 지구의 소중한 바다를 지키기 위해 한 배를 탄 사람들이다
+        </span>
+        <div id="just">
+        <img src="https://cdn-icons.flaticon.com/png/512/4239/premium/4239460.png?token=exp=1655161722~hmac=7e65fdab3158568575958958c3f9dec5" width="120"></div>
+    </div>
+
+
+    
+
+
+
+    <footer>
+        
+        <div id="address">
+            홈페이지 관리자 : 함경민  |  관리자 번호 123-456-0608
+        </div>
+        <div id="customer">
+            고객센터 0510-0608
+        </div>
+        
+  
+    </footer>
+    
+
+</body>
+</html>
